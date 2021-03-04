@@ -1,0 +1,82 @@
+{
+    "extractors": {},
+    "id": "78ae-4d25-b9b0",
+    "name": "Product",
+    "page_id": "",
+    "page_type": "item",
+    "plugins": {
+        "annotations-plugin": {
+            "extracts": [
+                {
+                    "annotations": {
+                        "#portia-content": "#dummy"
+                    },
+                    "container_id": null,
+                    "id": "d1d5-4e28-94bd",
+                    "item_container": true,
+                    "repeated": false,
+                    "required": [],
+                    "schema_id": "d277-4fb6-9fd3",
+                    "selector": ".detail-info",
+                    "siblings": 0,
+                    "tagid": null,
+                    "text-content": "#portia-content"
+                },
+                {
+                    "accept_selectors": [
+                        ".detail-pdname"
+                    ],
+                    "container_id": "d1d5-4e28-94bd",
+                    "data": {
+                        "e6a5-4017-8308": {
+                            "attribute": "content",
+                            "extractors": {},
+                            "field": "1eeb-4f50-bef1",
+                            "required": false
+                        }
+                    },
+                    "id": "fa5f-43c0-9a9a",
+                    "post_text": null,
+                    "pre_text": null,
+                    "reject_selectors": [],
+                    "repeated": false,
+                    "required": [],
+                    "selection_mode": "auto",
+                    "selector": ".detail-info > .detail-pdname",
+                    "tagid": null,
+                    "text-content": "content",
+                    "xpath": "//*[contains(concat(\" \", @class, \" \"), \" detail-info \")]/*[contains(concat(\" \", @class, \" \"), \" detail-pdname \")]"
+                },
+                {
+                    "accept_selectors": [
+                        ".oul-product-discounted-price > .ec-price > span:nth-child(4)"
+                    ],
+                    "container_id": "d1d5-4e28-94bd",
+                    "data": {
+                        "e94f-44eb-8efb": {
+                            "attribute": "content",
+                            "extractors": {},
+                            "field": "4a59-40dc-9790",
+                            "required": false
+                        }
+                    },
+                    "id": "e39e-44d1-95f1",
+                    "post_text": null,
+                    "pre_text": null,
+                    "reject_selectors": [],
+                    "repeated": false,
+                    "required": [],
+                    "selection_mode": "auto",
+                    "selector": ".detail-info > form > .row > .oul-product-discounted-price > .ec-price > span:nth-child(4)",
+                    "tagid": null,
+                    "text-content": "content",
+                    "xpath": "//*[contains(concat(\" \", @class, \" \"), \" detail-info \")]/form/*[contains(concat(\" \", @class, \" \"), \" row \")]/*[contains(concat(\" \", @class, \" \"), \" oul-product-discounted-price \")]/*[contains(concat(\" \", @class, \" \"), \" ec-price \")]/span[4]"
+                }
+            ]
+        }
+    },
+    "scrapes": "d277-4fb6-9fd3",
+    "spider": "www.price.com.hk",
+    "url": "https://www.price.com.hk/ec-product-detail.php?list_id=638&ecpid=242438",
+    "version": "0.13.3"
+}

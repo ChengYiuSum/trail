@@ -1,0 +1,21 @@
+{
+    "d277-4fb6-9fd3": {
+        "fields": {
+            "1eeb-4f50-bef1": {
+                "id": "1eeb-4f50-bef1", 
+                "name": "Name", 
+                "required": false, 
+                "type": "text", 
+                "vary": false
+            }, 
+            "4a59-40dc-9790": {
+                "id": "4a59-40dc-9790", 
+                "name": "Price", 
+                "required": false, 
+                "type": "price", 
+                "vary": false
+            }
+        }, 
+        "name": "Price - Apple HomePod Mini"
+    }
+}
